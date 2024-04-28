@@ -1,0 +1,7 @@
+- id: file-change-checker
+  name: Check for a file change within a folder
+  description: Check if a file within a folder changed and modify a file to set a flag to True or False
+  entry: file-change-checker
+  language: python
+  stages: [commit]
+  args: [shared] # Folder or file name at the root directory
